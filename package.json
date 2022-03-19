@@ -1,0 +1,22 @@
+{
+  "name": "videosplits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "startSass": "sass --watch ./scss/styles.scss ./css/styles.css"
+  },
+  "keywords": [],
+  "author": "Ethan Holter",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.1.2"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "mediainfo.js": "^0.1.7",
+    "python-shell": "^3.0.1"
+  }
+}

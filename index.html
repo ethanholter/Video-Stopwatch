@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./css/styles.css" rel="stylesheet">
+
+        <title>[inspiring product name]</title>
+    </head>
+    <body>
+        <div id="app">
+            <div id="mainArea">
+                <div id="videoContainer">Open a video to begin</div>
+                <div id="videoControlsContainer">
+                    <div id="timeIndicator">0.00</div>
+                    <input type="range" id="videoslider" min = "0" value="0">
+                    <div id="videoNavButtons">
+                        <button onclick="addTime(-0.5)">-0.5</button>
+                        <button onclick="addTime(-0.1)">-0.1</button>
+                        <button onclick="addTime(-0.01)">-0.01</button>
+                        <button onclick="playPause()" id="pausebutton">Play</button>
+                        <button onclick="addTime(0.01)">+0.01</button>
+                        <button onclick="addTime(0.1)">+0.1</button>
+                        <button onclick="addTime(0.5)">+0.5</button>
+                    </div>
+                </div>
+            </div>
+            <div id="sidebar">
+                <h3>Markers</h3>
+                <div id="data">
+                </div>
+                <div id="timerControls">
+                    <div class="fileInput" id="fileInput">
+                        <input type="file" accept="video/*"/>
+                        <button>Open Video</button>
+                    </div>
+                    <button id="newMarkerButton">Add Marker</button>
+                </div>
+            </div>
+        </div>
+        <script src="./js/videoController.js"></script>
+        <script src="./js/markerController.js"></script>
+    </body>
+</html>
